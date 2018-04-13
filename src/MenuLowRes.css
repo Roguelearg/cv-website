@@ -1,0 +1,75 @@
+.round {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 5px rgba(255, 0, 0, 1);
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  z-index: 21;
+  border-radius: 50%;
+  transition: all 2s;
+}
+
+div.lowRes {
+  height: 100vh;
+  width: 50vw;
+  left: -55vw;
+  top: 0;
+  position: fixed;
+  z-index: 21;
+  border-right: 5px solid rgba(120, 120, 120, 1);
+  background: linear-gradient(
+      115deg,
+      rgba(25, 25, 25, 1),
+      rgba(25, 25, 25, 1) 50%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 1) 50.2%,
+      rgba(30, 30, 30, 1) 50.2%,
+      rgba(30, 30, 30, 1)
+    );
+  transition: all 2s;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.lowRes nav{
+  color: white;
+}
+
+.lowRes p{
+  border-bottom: 3px solid rgba(120, 120, 120, 1);
+  margin: 0;
+  padding: 20px 0;
+}
+
+.lowRes p:first-child{
+  border-top: 3px solid rgba(120, 120, 120, 1);
+  margin-top: 40px;
+}
+
+.menuLowRes {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+
+  .menuLowRes {
+    display: block;
+  }
+
+  div.lowRes {
+    width: 25%;
+    left: -30%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  div.lowRes {
+    width: 50%;
+    left: -55%;
+  }
+
+}
