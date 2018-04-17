@@ -24,6 +24,10 @@
     100% {left: 5vw; opacity: 1;}
 }
 
+.global {
+  overflow-x: hidden;  
+}
+
 .menu {
   top: 25%;
   width: 10%;
