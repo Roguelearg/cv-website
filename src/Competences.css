@@ -128,3 +128,18 @@
   }
 
 }
+
+@media screen and (max-width: 350px) {
+  .lang {
+    font-size: 13px;
+  }
+
+  .grid-lang {
+    grid-template-columns: 115px 150px;
+  }
+
+  .progress {
+    width: 150px;
+    height: 15px;
+  }
+}

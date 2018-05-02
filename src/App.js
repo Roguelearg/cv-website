@@ -92,8 +92,6 @@ class App extends Component {
             <p id="content" onClick={this.clickEventMenu}>Accueil</p>
             <p id="eF" onClick={this.clickEventMenu}>E&F</p>
             <p id="comp" onClick={this.clickEventMenu}>Compétences</p>
-            <p>Test4</p>
-            <p>Test5</p>
           </nav>
         </div>
         <div className="App" ref={ (section) => { this.content = section; }}>
