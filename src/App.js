@@ -19,13 +19,13 @@ class App extends Component {
   clickEventMenu = (e) => {
     switch(e.target.id){
       case 'content':
-        scrollToComponent(this.content, { offset: 0, align: 'top', duration: 1500})
+        scrollToComponent(this.content, { offset: 0, align: 'top', duration: 1200})
         break;
       case 'eF':
-        scrollToComponent(this.eF, { offset: 0, align: 'top', duration: 1500})
+        scrollToComponent(this.eF, { offset: 0, align: 'top', duration: 1200})
         break;
       case 'comp':
-        scrollToComponent(this.comp, { offset: 0, align: 'top', duration: 1500})
+        scrollToComponent(this.comp, { offset: 0, align: 'top', duration: 1200})
         break;
       default:
     }
@@ -57,10 +57,10 @@ class App extends Component {
               <path className="st1" d="M100 110 V30 C100 30 130 20 130 50 C130 50 130 73 103 70 C105 70 130 69 130 90 C130 90 130 120 100 110"/>
               <path className="st1" d="M150 110 V70 C150 70 165 65 165 80 C165 80 165 92 155 90 L165 110"/>
               <path className="st1" d="M205 110 H185 V90 H200 H185 V70 H205"/>
-              <path className="st1" d="M225 110 V70 C225 75 232 90 240 109 C240 110 240 90 240 73"/>
+              <path className="st1" d="M225 110 V70 C225 75 232 90 240 109 C240 110 240 90 240 70"/>
               <path className="st1" d="M260 110 V70 C260 70 275 65 275 90 C275 90 275 115 260 110"/>
               <path className="st1" d="M302.5 110 C302.5 110 295 115 295 90 C295 90 295 65 302.5 70 C302.5 70 310 65 310 90 C310 90 310 115 302.5 110"/>
-              <path className="st1" d="M330 110 V70 C330 75 337 90 345 109 C345 110 345 90 345 73"/>
+              <path className="st1" d="M330 110 V70 C330 75 337 90 345 109 C345 110 345 90 345 70"/>
 
               </Anime>
             </svg>

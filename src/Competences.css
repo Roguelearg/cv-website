@@ -34,7 +34,7 @@
 .langs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
+  max-width: 98%;
   width: 1040px;
   position: relative;
   margin: 10px 0 10px;
@@ -121,7 +121,7 @@
   }
 }
 
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 755px) {
 
   .langs {
     justify-content: center;

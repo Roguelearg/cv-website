@@ -13,7 +13,7 @@
   top: 5%;
   z-index: 21;
   border-radius: 50%;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 div.lowRes {
@@ -25,15 +25,15 @@ div.lowRes {
   z-index: 21;
   border-right: 5px solid rgba(120, 120, 120, 1);
   background: linear-gradient(
-      115deg,
-      rgba(25, 25, 25, 1),
-      rgba(25, 25, 25, 1) 50%,
+      106.5deg,
+      rgba(15, 15, 15, 1),
+      rgba(15, 15, 15, 1) 50%,
       rgba(0, 0, 0, 1) 50%,
       rgba(0, 0, 0, 1) 50.2%,
-      rgba(30, 30, 30, 1) 50.2%,
-      rgba(30, 30, 30, 1)
+      rgba(25, 25, 25, 1) 50.2%,
+      rgba(25, 25, 25, 1)
     );
-  transition: all 2s;
+  transition: all 1s;
   margin: 0;
   padding: 0;
   text-align: center;
