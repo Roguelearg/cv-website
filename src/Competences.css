@@ -1,22 +1,33 @@
 @keyframes progress-bar {
-   0% { width: 100%; }
+   0% { width: 0%; }
+}
+
+@keyframes niveau {
+   0%   { opacity: 0; },
+   100% {opacity: 1; }
+}
+
+.blue{
+  background: linear-gradient(
+    to right,
+    rgba(3, 31, 70, 1),
+    rgba(3, 31, 70, 1) 15%,
+    rgba(11, 113, 255, 1) 100%
+    );
+  border-radius: 20px;
+  animation: progress-bar 4s ease-out;
 }
 
 .progress {
   width: 300px;
-  height: 30px;
+  height: 10px;
   border: 1px solid;
   border-radius: 20px;
   grid-area: progres;
   position: relative;
-  background: linear-gradient(
-    to right,
-    rgba(226, 50, 59, 1) ,
-    rgba(48, 79, 150, 0.9) 75%,
-    rgba(10, 49, 102, 1) 100%
-    );
+  background: white;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .lang {
@@ -58,9 +69,10 @@
   padding-bottom: 40px;
 }
 
-.blanck {
+/*.blanck {
   background: rgba(255, 255, 255, 1);
   height: 100%;
+  border-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   -moz-animation: progress-bar 4s ease-out;
@@ -69,6 +81,17 @@
   width: 100%;
   margin:0;
   padding: 0;
+}*/
+
+#niveau{
+  align-self: end;
+  position: absolute;
+  left: 50%;
+  margin-bottom: 7px;
+}
+
+.opacity-anim{
+  animation: niveau 4s ease-out;
 }
 
 @media screen and (max-width: 1420px) {
@@ -79,7 +102,7 @@
 
   .progress {
     width: 250px;
-    height: 25px;
+    height: 10px;
   }
 
   .grid-lang {
@@ -97,7 +120,7 @@
 
   .progress {
     width: 200px;
-    height: 20px;
+    height: 10px;
   }
 
   .grid-lang {
@@ -145,6 +168,6 @@
 
   .progress {
     width: 150px;
-    height: 15px;
+    height: 10px;
   }
 }
