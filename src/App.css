@@ -25,26 +25,26 @@
 }
 
 .global {
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
 
 .menu {
-  top: 25%;
-  width: 10%;
-  left: 5%;
-  position: fixed;
-  text-align: center;
-  color: white;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-name: menu;
+  animation-timing-function: ease;
   background: rgba(25, 25, 25, 1);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.75);
-  z-index: 21;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation-name: menu;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
+  left: 5%;
+  position: fixed;
+  text-align: center;
+  top: 25%;
+  width: 10%;
+  z-index: 21;
 }
 
 .photo {
@@ -52,17 +52,17 @@
 }
 
 nav {
-  margin: 25px 0;
+  margin: 10px 0;
 }
 
 nav p {
+  font-size: 18px;
   margin: 10px 0;
-  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.33);
 }
 
 nav p:hover {
-  text-decoration: underline;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .nom {
@@ -75,22 +75,22 @@ nav p:hover {
   background: linear-gradient(
     110deg,
     rgba(15, 15, 15, 1),
-    rgba(15, 15, 15, 1) 33%,
-    rgba(0, 0, 0, 1) 33%,
+    rgba(15, 15, 15, 1) 33.2%,
     rgba(0, 0, 0, 1) 33.2%,
-    rgba(25, 25, 25, 1) 33.2%,
-    rgba(25, 25, 25, 1) 66%,
-    rgba(0, 0, 0, 1) 66%,
-    rgba(0, 0, 0, 1) 66.2%,
-    rgba(35, 35, 35, 1) 66.2%
+    rgba(0, 0, 0, 1) 33.4%,
+    rgba(25, 25, 25, 1) 33.4%,
+    rgba(25, 25, 25, 1) 68.5%,
+    rgba(0, 0, 0, 1) 68.5%,
+    rgba(0, 0, 0, 1) 68.7%,
+    rgba(35, 35, 35, 1) 68.7%
   );
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  width: 100vw;
-  height: 100vh;
   box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.75);
-  z-index: 20;
+  height: 100vh;
   position: relative;
+  width: 100vw;
+  z-index: 20;
 }
 
 .content {
@@ -100,27 +100,29 @@ nav p:hover {
 }
 
 h1 {
+  color: rgba(6, 63, 143, 1);
   left: 20%;
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 30px;
   margin-top: 0;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.33);
+  padding-bottom: 30px;
+  padding-top: 50px;
+  position: relative;
+  text-shadow: 2px 2px 0px rgba(6, 63, 143, 0.33);
 }
 
 h2 {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  text-align: center;
   position: relative;
+  text-align: center;
+  width: 100vw;
 }
 
 h3 {
+  font-size: 24px;
   left: 22%;
-  position: relative;
-  margin-top: 20px;
   margin-bottom: 10px;
+  margin-top: 20px;
+  position: relative;
 }
 
 .caroussel {
@@ -130,66 +132,66 @@ h3 {
 }
 
 #un {
-  animation-name: un;
   animation-duration: 13.5s;
   animation-iteration-count: infinite;
+  animation-name: un;
   animation-timing-function: ease;
 }
 
 #deux {
-  animation-name: deux;
-  animation-duration: 13.5s;
   animation-delay: 4.5s;
+  animation-duration: 13.5s;
   animation-iteration-count: infinite;
+  animation-name: deux;
   animation-timing-function: ease;
 }
 
 #trois {
-  animation-name: trois;
-  animation-duration: 13.5s;
   animation-delay: 9s;
+  animation-duration: 13.5s;
   animation-iteration-count: infinite;
+  animation-name: trois;
   animation-timing-function: ease;
 }
 
 .st1 {
   fill: none;
-  stroke: #eee;
-  stroke-width: 7;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
+  stroke-width: 7;
+  stroke: #eee;
 }
 
 .container ul {
-  list-style: none;
-  position: relative;
-  top: 5vh;
-  left: 35vw;
-  margin-bottom: 40px;
-  padding: 1px 100px;
   color: #444;
   font-size: 13px;
+  left: 35vw;
+  list-style: none;
+  margin-bottom: 40px;
+  padding: 1px 100px;
+  position: relative;
   text-align: center;
+  top: 5vh;
 }
 
 .container ul:before {
-  content: '';
-  width: 1px;
-  height: 100%;
-  position: absolute;
   border-left: 2px dashed #777;
+  content: '';
+  height: 100%;
   left: 100px;
+  position: absolute;
+  width: 1px;
 }
 
 .container ul li {
-  position: relative;
-  margin-left: 30px ;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 14px;
   border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08);
+  margin-left: 30px ;
+  padding: 14px;
+  position: relative;
   width: 400px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08)
 }
 
 .container ul li:not(:first-child) {
@@ -197,24 +199,24 @@ h3 {
 }
 
 .container ul li > span {
-  width: 2px;
-  height: 100%;
   background: #777;
+  height: 100%;
   left: -30px;
-  top: -7px;
   position: absolute;
+  top: -7px;
+  width: 2px;
 }
 
 .container ul li > span:before, .container ul li > span:after {
-  content: '';
-  width: 8px;
-  height: 8px;
+  background: #86b7e7;
   border-radius: 50%;
   border: 2px solid #777;
-  position: absolute;
-  background: #86b7e7;
+  content: '';
+  height: 8px;
   left: -5px;
+  position: absolute;
   top: 0;
+  width: 8px;
 }
 
 .container ul li span:after {
@@ -226,19 +228,21 @@ h3 {
 }
 
 .container div .title {
+  font-size: 16px;
   font-weight: 600;
-  font-size: 12px;
 }
 
 .container div .info {
   color: #777;
-  font-size: 11px;
+  font-size: 14px;
+  font-weight: 600;
   padding: 5px 0;
 }
 
 .container div .type {
   color: #545454;
-  font-size: 12px;
+  font-size: 15px;
+  text-align: justify;
 }
 
 .container div > div {
@@ -250,10 +254,11 @@ h3 {
 }
 
 .container span.number span {
-  position: absolute;
-  font-size: 10px;
-  left: -45px;
+  font-size: 12px;
   font-weight: bold;
+  left: -65px;
+  margin-top: -2px;
+  position: absolute;
 }
 
 .container span.number span:first-child {
@@ -270,10 +275,10 @@ h3 {
     rgba(235, 235, 235, 1) 55%,
     rgba(245, 245, 245, 1) 55%
     );
-  padding-bottom: 50px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.75);
-  z-index: 19;
+  padding-bottom: 50px;
   position: relative;
+  z-index: 19;
 }
 
 .comps {
@@ -282,15 +287,87 @@ h3 {
     rgba(235, 235, 235, 1) 55%,
     rgba(245, 245, 245, 1) 55%
     );
+  margin: 0;
   position: relative;
   z-index: 18;
+}
+
+.font-content {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accueil {
+}
+
+.bigPicture {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 5% 0 0;
+  width: 20%;
+}
+
+h1.job{
+  color: white;
+  text-align: center;
+  left: 0;
   margin: 0;
+  font-size: 50px;
+}
+
+.desc{
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+p.age{
+ text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+
+}
+
+a{
+ text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+
+}
+
+.git{
+ color: white;
+ text-decoration: underline;
+
+}
+
+.linkedin{
+  color: white;
+  text-decoration: underline;
+}
+
+i::before{
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+}
+
+i{
+  font-size: 2em;
+  vertical-align: baseline;
+  margin-right: 4px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+}
+
+i.fa-circle{
+  font-size: 1em;
+  margin: 0 4%;
+}
+
+#tac{
+  text-align: center;
 }
 
 @media screen and (max-width: 1420px) {
 
-  .menu {
-    font-size: 0.75rem;
+  nav p {
+    font-size: 16px;
   }
 
   .nom {
@@ -305,8 +382,8 @@ h3 {
 
 @media screen and (max-width: 1100px) {
 
-  .menu {
-    font-size: 0.65rem;
+  nav p {
+    font-size: 14px;
   }
 
 }
@@ -321,12 +398,15 @@ h3 {
     left: 15vw;
   }
 
+  h1.job{
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 750px) {
-  
+
   h1{
-    font-size: 1.7rem;
+    font-size: 27px;
     left: 10%;
   }
 
@@ -355,9 +435,16 @@ h3 {
   }
 
   h1{
-    font-size: 1.4rem;
+    font-size: 22px;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
+  h1.job{
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -372,8 +459,16 @@ h3 {
 
 
   h1{
-    font-size: 1.2rem;
+    font-size: 19px;
   }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  /*.desc {
+    max-width: 75%;
+  }*/
 }
 
 @media screen and (max-width: 400px) {
@@ -392,15 +487,24 @@ h3 {
   }
 
   .container div .info {
-   
+
     font-size: 10px;
   }
 
   h1 {
+    font-size: 18px;
     left: 10%;
   }
+
+  /*.desc {
+    max-width: 75%;
+  }*/
+
 }
 
-/*@media screen and (max-width: 340px) {
-  .contaner
-}*/
+@media screen and (max-width: 340px) {
+
+  i.fa-circle{
+    margin: 0 2%;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Anime from 'react-anime';
-import test from './portrait.png';
+import portrait from './portrait.png';
 import MenuLowRes from './MenuLowRes';
 import EF from './EF';
 import Competences from './Competences';
@@ -37,7 +37,7 @@ class App extends Component {
         <MenuLowRes clickEventMenu={this.clickEventMenu} />
         <div className="menu">
           <div className="photo">
-            <img src={test} alt="portrait" style={{width:'45%', height:'auto'}}/>
+            <img src={portrait} alt="portrait" style={{width:'45%', height:'auto'}}/>
           </div>
           <div className="prenom">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 400 150">
@@ -90,18 +90,29 @@ class App extends Component {
           </div>
           <nav>
             <p id="content" onClick={this.clickEventMenu}>Accueil</p>
-            <p id="eF" onClick={this.clickEventMenu}>E&F</p>
+            <p id="eF" onClick={this.clickEventMenu}>E<span className="et">&</span>F</p>
             <p id="comp" onClick={this.clickEventMenu}>Compétences</p>
           </nav>
         </div>
         <div className="App" ref={ (section) => { this.content = section; }}>
-          <div className="content" style={{top: window.innerHeight/2 - window.innerHeight/9}}>
-            <h2>Je suis</h2>
-            <div className="caroussel" style={{transform: `translate3d(${this.state.x}px, 0, 0)`}}>
-              <h2 id="un">exemple 1</h2>
-              <h2 id="deux">exemple 2</h2>
-              <h2 id="trois">exemple 3</h2>
+          <div className="accueil">
+            <img className="bigPicture" src={portrait} />
+            <h1 className="job">Développeur web et logiciel</h1>
+            <div className="desc">
+              <a href="https://github.com/Roguelearg" className="git"><i className="fab fa-github"></i></a>
+              <i className="fas fa-circle"></i>
+              <p className="age">28 ans</p>
+              <i className="fas fa-circle"></i>
+              <a href="https://www.linkedin.com/feed/?trk=hb_signin" className="linkedin"><i className="fab fa-linkedin"></i></a>
             </div>
+         {/* <div className="content" style={{top: window.innerHeight/2 - window.innerHeight/9}}>
+                     <h2>Je suis</h2>
+                     <div className="caroussel" style={{transform: `translate3d(${this.state.x}px, 0, 0)`}}>
+                       <h2 id="un">exemple 1</h2>
+                       <h2 id="deux">exemple 2</h2>
+                       <h2 id="trois">exemple 3</h2>
+                     </div>
+                   </div>*/}
           </div>
         </div>
         <div className="eF" ref={ (section) => { this.eF = section; }}>

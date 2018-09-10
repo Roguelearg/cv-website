@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Rammetto One', cursive;
+  font-family: 'Abril Fatface', cursive;
   -webkit-overflow-x: hidden;
   overflow-x: hidden;
 }
@@ -10,3 +10,17 @@ html {
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+	font-family: 'Bedini Bold';
+	src: local('Bedini Bold'), local('bedinibold'),
+       url('./font/bedinibold.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('./font/bedinibold.woff') format('woff'), /* Modern Browsers */
+       url('./font/bedinibold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./font/bedinibold.svg') format('svg'); /* Legacy iOS */
+}
+
+.et {
+	font-family: 'Bedini Bold';
+}
+
